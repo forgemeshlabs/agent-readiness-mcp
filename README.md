@@ -1,5 +1,7 @@
 # agent-readiness-mcp — the free Agent Readiness Scanner
 
+[![M8ven Verified](https://m8ven.ai/badge/mcp/forgemeshlabs-agent-readiness-mcp-18acmq?variant=verified)](https://m8ven.ai/mcp/forgemeshlabs-agent-readiness-mcp-18acmq)
+
 [![agent-readiness-mcp MCP server](https://glama.ai/mcp/servers/forgemeshlabs/agent-readiness-mcp/badges/score.svg)](https://glama.ai/mcp/servers/forgemeshlabs/agent-readiness-mcp)
 [![agent-readiness-mcp MCP server](https://glama.ai/mcp/servers/forgemeshlabs/agent-readiness-mcp/badges/card.svg)](https://glama.ai/mcp/servers/forgemeshlabs/agent-readiness-mcp)
 
