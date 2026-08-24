@@ -70,6 +70,12 @@ server.registerTool(
   "scan_site",
   {
     title: "ASO Scan — measure your ASO Score",
+    annotations: {
+      readOnlyHint: true,
+      destructiveHint: false,
+      idempotentHint: false,
+      openWorldHint: true,
+    },
     description:
       "Scan a website for Agent Readiness using the ASO (Agent Signal Optimization) framework and return an Agent Readiness Report. " +
       "Use this for a full site-level baseline, competitive audit, or before/after readiness measurement; use check_signal instead when you only need one named signal, and use get_fix_plan when you only need remediation steps. " +
@@ -105,6 +111,12 @@ server.registerTool(
   "check_signal",
   {
     title: "Run a single agent-readiness check",
+    annotations: {
+      readOnlyHint: true,
+      destructiveHint: false,
+      idempotentHint: false,
+      openWorldHint: true,
+    },
     description:
       "Run one specific agent-readiness check against a site (e.g. 'a2a-agent-card', 'llms-txt', 'mcp-server-card', 'x402'). " +
       "Use this for targeted validation after making a fix or when debugging one signal; use scan_site for the complete ASO Score and get_fix_plan for a prioritized remediation roadmap. " +
@@ -134,6 +146,12 @@ server.registerTool(
   "list_checks",
   {
     title: "List all agent-readiness checks",
+    annotations: {
+      readOnlyHint: true,
+      destructiveHint: false,
+      idempotentHint: true,
+      openWorldHint: false,
+    },
     description:
       "List the full catalog of supported ASO checks with id, name, category, description, and spec link. Use this before check_signal to discover valid check ids, to build UI filters, or to explain the scanner coverage; it does not scan a site or produce a score.",
     inputSchema: {},
@@ -145,6 +163,12 @@ server.registerTool(
   "get_fix_plan",
   {
     title: "Get a prioritized ASO fix plan",
+    annotations: {
+      readOnlyHint: true,
+      destructiveHint: false,
+      idempotentHint: false,
+      openWorldHint: true,
+    },
     description:
       "Scan a site and return a prioritized remediation plan: which signals to add first, the ASO Score points each fix is worth, " +
       "and ready-to-paste artifact templates (robots.txt AI rules, llms.txt, agent.json, A2A agent-card.json, MCP server card, x402 manifest, pricing.json, security.txt, status endpoint). " +
@@ -167,6 +191,12 @@ server.registerTool(
   "get_aso_framework",
   {
     title: "ASO framework reference",
+    annotations: {
+      readOnlyHint: true,
+      destructiveHint: false,
+      idempotentHint: true,
+      openWorldHint: false,
+    },
     description:
       "Return the ASO (Agent Signal Optimization) framework reference: the six signal pillars with point weights, " +
       "the Agent Readiness Index maturity levels (ASO-0 through ASO-5), certification thresholds, and the scoring rubric. " +
