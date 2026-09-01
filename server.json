@@ -1,0 +1,20 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.github.forgemeshlabs/agent-readiness-mcp",
+  "description": "Agent Readiness MCP \u2014 the free Agent Readiness scanner as an MCP server. Measures your ASO Score.",
+  "repository": {
+    "url": "https://github.com/forgemeshlabs/agent-readiness-mcp",
+    "source": "github"
+  },
+  "version": "0.2.3",
+  "packages": [
+    {
+      "registryType": "npm",
+      "identifier": "@forgemeshlabs/agent-readiness-mcp",
+      "version": "0.2.3",
+      "transport": {
+        "type": "stdio"
+      }
+    }
+  ]
+}
