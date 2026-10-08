@@ -6,12 +6,12 @@
     "url": "https://github.com/forgemeshlabs/agent-readiness-mcp",
     "source": "github"
   },
-  "version": "0.2.5",
+  "version": "0.2.6",
   "packages": [
     {
       "registryType": "npm",
       "identifier": "@forgemeshlabs/agent-readiness-mcp",
-      "version": "0.2.5",
+      "version": "0.2.6",
       "transport": {
         "type": "stdio"
       }
