@@ -42,7 +42,7 @@ Every check returns **pass / partial / fail** with concrete evidence and a fix r
 
 ## Install
 
-Requires Node.js ≥ 18. Published on npm as [`@forgemeshlabs/agent-readiness-mcp`](https://www.npmjs.com/package/@forgemeshlabs/agent-readiness-mcp) — no clone or build needed.
+Requires Node.js ≥ 20. Published on npm as [`@forgemeshlabs/agent-readiness-mcp`](https://www.npmjs.com/package/@forgemeshlabs/agent-readiness-mcp) — no clone or build needed.
 
 ```bash
 npm install -g @forgemeshlabs/agent-readiness-mcp
@@ -109,7 +109,7 @@ npm run smoke -- https://your-site.com
 This repository includes `glama.json` for Glama MCP registry ownership and install metadata.
 
 - **Package:** `@forgemeshlabs/agent-readiness-mcp`
-- **Current release:** `v0.1.2`
+- **Current release:** `v0.2.5`
 - **Transport:** local `stdio`
 - **Authentication:** none required for local `stdio` use. The scanner does not ask for API keys, tokens, cookies, or third-party credentials.
 - **HTTP deployment:** not enabled by this npm package. Any public HTTP deployment of this scanner must add authentication, per-client rate limits, request logging, and an egress policy before exposure.
@@ -131,11 +131,9 @@ List the ASO scanner checks.
 
 Release verification:
 
-- Git tag: `v0.1.2`
+- Git tag: `v0.2.5`
 - npm package: `@forgemeshlabs/agent-readiness-mcp`
-- MCP server version: `0.1.2`
-
-`v0.1.2` is the Agent Readiness TDQS refresh: it improves Glama tool-selection guidance, adds Glama badges, and keeps registry metadata ready for a refreshed Glama release.
+- MCP server version: `0.2.5` (read from `package.json` at startup)
 
 ### Glama release build
 
